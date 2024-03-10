@@ -1,23 +1,30 @@
-import './style.css'
+import { ComponentProps } from 'react'
+import { styled } from './styles'
 
-interface ButtonProps {
-  size: 'small' | 'big'
-}
+export const Button = styled('button', {
+  fontFamily: '$default',
+  backgroundColor: '$ignite500',
+  borderRadius: '$md',
+  border: 0,
+  fontWeight: 'bold',
+  color: '$white',
 
-export function Button({ size = 'small' }: ButtonProps) {
-  if (size === 'big') {
-    return (
-      <button className="font-default bg-ignite500 px-20 py-10">
-        {' '}
-        Hello world{' '}
-      </button>
-    )
-  }
+  variants: {
+    size: {
+      small: {
+        fontSize: 14,
+        padding: '$2 $4',
+      },
+      big: {
+        fontSize: 16,
+        padding: '$3 $6',
+      },
+    },
+  },
 
-  return (
-    <button className="font-default bg-ignite500 px-10 py-5">
-      {' '}
-      Hello world{' '}
-    </button>
-  )
-}
+  defaultVariants: {
+    size: 'small',
+  },
+})
+
+export type ButtonProps = ComponentProps<typeof Button>
