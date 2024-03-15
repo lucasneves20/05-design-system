@@ -8,7 +8,7 @@ export const Button = styled('button', {
   fontSize: '$sm',
   fontWeight: '$medium',
   fontFamily: '$default',
-  textAlign: 'cenetr',
+  textAlign: 'center',
   minWidth: 120,
   boxSizing: 'border-box',
   padding: '0 $4',
@@ -50,6 +50,7 @@ export const Button = styled('button', {
 
         '&:not(:disabled):hover': {
           background: '$ignite500',
+          color: '$white',
         },
 
         '&:disabled': {
@@ -60,6 +61,14 @@ export const Button = styled('button', {
 
       tertiary: {
         color: '$gray100',
+
+        '&:not(:disabled):hover': {
+          color: '$white',
+        },
+
+        '&:disabled': {
+          color: '$gray600',
+        },
       },
     },
 
@@ -83,3 +92,5 @@ export const Button = styled('button', {
 export type ButtonProps = ComponentProps<typeof Button> & {
   as?: ElementType
 }
+
+Button.displayName = 'Button'
