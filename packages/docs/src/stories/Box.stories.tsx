@@ -7,6 +7,13 @@ const meta: Meta<BoxProps> = {
   args: {
     children:
         <Text>Testando algo em tela</Text>
+  },
+  argTypes: {
+    children: {
+      control: {
+        type: null
+      }
+    }
   }
 }
 

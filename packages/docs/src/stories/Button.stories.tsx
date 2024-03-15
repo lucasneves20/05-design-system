@@ -6,11 +6,25 @@ const meta: Meta<ButtonProps> = {
   title: "Form/Button",
   component: Button,
   args: {
-    children: "Send"
+    children: "Send",
+    variant: 'primary',
+    size: 'md',
+    disabled: false
   },
   argTypes: {
     onClick: {
       action: 'click',
+    },
+    variant: {
+      control: { type: 'inline-radio' },
+      options: ['primary', 'secondary', 'tertiary'],
+    },
+    size: {
+      control: { type: 'inline-radio' },
+      options: ['sm', 'md'],
+    },
+    disabled: {
+      control: { type: 'boolean' }
     }
   }
 }

@@ -7,6 +7,13 @@ const meta: Meta<AvatarProps> = {
   args: {
     src: "https://github.com/lucasneves20.png",
     alt: "Lucas Neves"
+  },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text'
+      }
+    }
   }
 }
 
