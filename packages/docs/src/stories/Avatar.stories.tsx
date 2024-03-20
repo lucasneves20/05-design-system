@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react"
-import { Avatar, AvatarProps } from "@ignite-ui/react"
+import { Avatar, AvatarProps } from "@snowfall-ignite-ui/react"
 
 const meta: Meta<AvatarProps> = {
   title: "Data Display/Avatar",

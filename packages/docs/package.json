@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "@snowfall-ignite-ui/docs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -21,10 +21,10 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@snowfall-ignite-ui/eslint-config": "*",
+    "@snowfall-ignite-ui/react": "*",
+    "@snowfall-ignite-ui/tokens": "*",
+    "@snowfall-ignite-ui/ts-config": "*",
     "@storybook/addon-essentials": "^7.6.17",
     "@storybook/addon-interactions": "^7.6.17",
     "@storybook/addon-links": "^7.6.17",

@@ -7,7 +7,7 @@ const {
   radii,
   space,
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-} = require('@ignite-ui/tokens')
+} = require('@snowfall-ignite-ui/tokens')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
