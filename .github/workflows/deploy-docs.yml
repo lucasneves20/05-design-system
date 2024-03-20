@@ -17,8 +17,8 @@ jobs:
         with: 
           node-version: 20
       
-      - run: npm ci
-      
+      - run: npm i
+
       - run: npm run build
         env:
           TURBO_TOKEN: p0mkyJmKo4DDAM7xVrzHUzxc
